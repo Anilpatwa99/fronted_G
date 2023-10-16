@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .f{
+            border: 1px solid gray;
+            height: 30rem;
+            width: 350px;
+            position: relative;
+            left: 40%;
+            
+        }
+        i{
+            margin-left: 100px;
+        }
+        .b2{
+            background-color: rgb(0, 183, 255);
+            height: 30px;
+            width: 250px;
+            margin-left: 45px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        .b3{
+            height: 30px;
+            width: 250px;
+            margin-left: 45px;
+            border-radius: 5px;
+        }
+        .b4{
+            margin-top: 80px;
+        }
+        span{
+            margin-left: 45px;
+
+        }
+        .b6{
+            color: blue;
+            margin-left: 100px;
+        }
+        .b7{
+            margin-left: 130px;
+        }
+        .signup{
+            height: 60px;
+            width: 350px;
+            border: 1px solid;
+            position: relative;
+            left: 40%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="f">
+    <h1><i>Instagram</i></h1>
+    <form class="b4" action="process-login.php" method="post">
+        <label  for="username"></label>
+        <input  class="b3"type="text" id="username" name="username" required placeholder="Phone number,username,or email">
+        <br><br>
+
+        <label for="password"></label>
+        <input class="b3"  type="password" id="password" name="password" required placeholder="Password">
+        <br><br><br>
+
+        <input  class="b2" type="submit" value="Log in">
+    </form>
+    <br>
+    <span> ______________OR______________</span>
+    <br><br>
+    <span class="fab fa-facebook  b6" >Log in with Facebook</span>
+    <br><br>
+    <span class="b7">Forgot password?</span>
+    
+</div>
+<div class="signup">Don't have an account? <a href="signup.html">Sign up</a></div>
+
+</body>
+</html>
+
+</body>
+</html>

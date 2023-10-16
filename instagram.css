@@ -1,0 +1,42 @@
+.container{
+    display: inline-block;
+}
+
+.sidebar{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    border-right: 1px solid gray;
+
+}
+i{
+    color: rgb(6, 1, 8);
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+}
+.side-content1{
+    height: 30rem;
+    width: 200px;
+    margin: 20px;
+    position: relative;
+    top: 10px;
+}
+.side-content2{
+    height: 8rem;
+    margin: 20px;
+    position: relative;
+    top: 60px;
+}
+.home1{
+    margin-left: 18px;
+
+}
+.icon{
+    font-size: 20px;
+}
+span{
+    margin-left: 22px;
+    font-size: 18px;
+}
