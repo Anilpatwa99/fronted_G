@@ -1,0 +1,36 @@
+.main{
+    background-color: aqua;
+    display: flex;
+    height: 700px;
+}
+.b2{
+    background-color: yellow;
+    border-radius: 50%;
+    height: 10rem;
+    width: 100px;
+    position: relative;
+    top: 70px;
+    left: 250px;
+    
+    
+}
+.b1{
+    background-color: violet;
+    height: 10rem;
+    width: 100px;
+    margin: 20px;
+    position: relative;
+    top: 20rem;
+}
+
+    
+#a2{
+    background-color: tomato;
+    border-radius: 50%;
+}
+#a3{
+    height: 15rem;
+    
+}
+
+

@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box1{
+    background-color: greenyellow;
+    height: 100vh;
+    width: 200px;
+    position: absolute;
+    top: 0;
+
+}
+.box2{
+    background-color: aqua;
+    height: 8rem;
+    width: 100%;
+
+}
+.b1{
+    background-color: red;
+    height: 8rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 50%;
+
+}
+.b2{
+    background-color: blue;
+    height: 15rem;
+    margin: 10px;
+}
+.b3{
+    background-color: white;
+    height: 5rem;
+    margin: 10px;
+}
+.b4{
+    background-color: orange;
+    height: 5rem;
+    margin: 10px;
+
+}
+.b5{
+    background-color: blueviolet;
+    height: 5rem;
+    margin: 10px;
+}
+.b21{
+    background-color: aliceblue;
+    height: 5rem;
+    border-radius: 50%;
+    width: 60%;
+    margin: 0 auto;
+}
+.b22{
+    background-color: aquamarine;
+    height: 7rem;
+    margin: 10px;
+}
+.c1{
+    background-color: purple;
+    height: 2rem;
+    width: 25%;
+    position: relative;
+    top: 10px;
+    left: 250px ;
+
+}
+.c2{
+    background-color: blue;
+    height: 2rem;
+    width: 25%;
+    position: relative;
+    top: 40px;
+    left: 250px ;
+    
+}
+.c3{
+    background-color: darkolivegreen;
+    height: 6rem;
+    position: relative;
+    bottom: 50px;
+    left: 1000px;
+    width: 500px;
+    
+    
+
+}
+.fun{
+    display: flex;
+    
+}
+.f1{
+    background-color: brown;
+    height: 4rem;
+    width: 50%;
+    margin: 20px;
+
+}
+.f2{
+    background-color: blueviolet;
+    height: 4rem;
+    width: 50% ;
+    border-radius: 50%;
+    margin: 20px;
+}
+.content3{
+    display: flex;
+}
+.b31{
+    background-color: lightcoral;
+    height: 60vh;
+    width: 20%;
+    position: relative;
+    left: 250px;
+    margin: 50px;
+
+}
+#a1{
+    background-color: darkblue;
+
+}
+#a2{
+    background-color: darkred;
+}
+.d1{
+    background-color: lightblue;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 20px;
+}
+.d2{
+    background-color: darkslategray;
+    height: 10rem;
+    margin: 20px;
+}
+
