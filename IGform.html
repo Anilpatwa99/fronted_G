@@ -3,118 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
-        
-        .f{
-            border: 1px solid gray;
-            height: 30rem;
-            width: 350px;
-            position: relative;
-            left: 40%;
+        .container{
+            display: flex;
+            height: 98vh;
+            border: 1px solid;
+            justify-content: center;
             
         }
-        i{
-            margin-left: 100px;
-        }
-        .b2{
-            background-color: rgb(0, 183, 255);
-            height: 30px;
-            width: 250px;
-            margin-left: 45px;
-            display: flex;
-            justify-content: center;
-            border-radius: 10px;
-        }
-        .b3{
-            height: 30px;
-            width: 250px;
-            margin-left: 45px;
-            border-radius: 5px;
-        }
-        .b4{
-            margin-top: 80px;
-        }
-        span{
-            margin-left: 45px;
+        .image{
+            height: 80%;
+            width: 25%;
+        
+            margin-top: 40px;
+            
 
         }
-        .b6{
-            color: blue;
-            margin-left: 100px;
+        .form{
+            height: 80%;
+            width: 25%;
+            margin: 40px 0 0 40px;
+            
         }
-        .b7{
-            margin-left: 130px;
-        }
-        .signup{
-            height: 60px;
-            width: 350px;
+        .inner{
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-content: space-around;
             border: 1px solid;
-            position: relative;
-            left: 40%;
+            
+        }
+        .logo{
+            margin-top: 30px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .input{
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .input-box1{
+            height: 30px;
+            width: 80%;
+        }
+        .input-box2{
+            background-color: skyblue;
+            height: 30px;
+            width: 82.5%;
+            border: none;
+            border-radius: 5px;
+            
+        }
+        .sign{
+            height: 10%;
             margin-top: 20px;
+            border: 1px solid;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        p{
-            color: blue;
-        }
-        
-        h2{
-
-            border-bottom:1px solid black ;
-            width: 50%;
-        
-        }
-
-        .line{
-
+        .bottom{
             display: flex;
+            justify-content: space-evenly
+        }
+        h1{
+            width: 110px;
+            border-bottom: 1px solid gray;
+            
+        }
+        span{
+            position: relative;
+            top: 10px;
+        }
+        .link{
+            text-align: center;
+        }
+        .s{
+            color: darkblue;
+        }
+        .icon{
+            height: 15%;
+            display: flex;
+            justify-content: space-around
+        }
+        p{
+            height: 2%;
+            text-align: center;
+        }
+        .icon1{
+            height: 50px;
+            
+        }
+        .img{
+            height: 100%;
+            width: 100%;
             
         }
        
-        .s{
-
-            position: relative;
-            right: 1.4rem;
-            top: 0.5rem;
             
-        }
-        
     </style>
 </head>
 <body>
-    
-    <div class="f">
-    <h1><i>Instagram</i></h1>
-    <form class="b4" action="process-login.php" method="post">
-        <label  for="username"></label>
-        <input  class="b3"type="text" id="username" name="username" required placeholder="Phone number,username,or email">
-        <br><br>
-
-        <label for="password"></label>
-        <input class="b3"  type="password" id="password" name="password" required placeholder="Password">
-        <br><br><br>
-
-        <input  class="b2" type="submit" value="Log in">
-    </form>
-    <br>
-    <div class="line">
-
-        <h2></h2><span class="s">OR</span><h2></h2>
+    <div class="container">
+        <div class="image">
+            
+            <img class="img" src="https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk" alt="">
+            
+        </div>
+        <div class="form">
+            <div class="inner">
+                <div class="logo">Instagram</div><br>
+                <div class="input">
+                    <input class="input-box1" type="text" placeholder="Phone number,username,or email">
+                    <input class="input-box1" type="text" placeholder="Password">
+                    <input class="input-box2" type="submit" value="Log in">
+                </div>
+                <div class="bottom">
+                    <h1></h1>
+                    <span>OR</span>
+                    <h1></h1>
+                </div>
+                <div class="link">
+                    <span class="fab fa-facebook s">Log in with Facebook</span>
+                    <br><br>
+                    <h5>Forgot password?</h5>
+                </div>
+            </div>
+            <div class="sign">Don't have an account? Sign up</div>
+            <p>Get the app</p>
+            <div class="icon">
+                <img class="icon1" src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="">
+                <img class="icon1" src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" alt="">
+            </div>
+        </div>
     </div>
-    <br><br>
-    <span class="fab fa-facebook  b6" >Log in with Facebook</span>
-    <br><br>
-    <span class="b7">Forgot password?</span>
-    
-</div>
-<div class="signup">Don't have an account? <a href="signup.html" target="_blank">Sign up</a></div>
-
-</body>
-</html>
-
 </body>
 </html>
