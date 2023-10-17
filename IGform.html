@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
+        
         .f{
             border: 1px solid gray;
             height: 30rem;
@@ -60,9 +61,32 @@
         p{
             color: blue;
         }
+        
+        h2{
+
+            border-bottom:1px solid black ;
+            width: 50%;
+        
+        }
+
+        .line{
+
+            display: flex;
+            
+        }
+       
+        .s{
+
+            position: relative;
+            right: 1.4rem;
+            top: 0.5rem;
+            
+        }
+        
     </style>
 </head>
 <body>
+    
     <div class="f">
     <h1><i>Instagram</i></h1>
     <form class="b4" action="process-login.php" method="post">
@@ -77,14 +101,17 @@
         <input  class="b2" type="submit" value="Log in">
     </form>
     <br>
-    <span> ______________OR______________</span>
+    <div class="line">
+
+        <h2></h2><span class="s">OR</span><h2></h2>
+    </div>
     <br><br>
     <span class="fab fa-facebook  b6" >Log in with Facebook</span>
     <br><br>
     <span class="b7">Forgot password?</span>
     
 </div>
-<div class="signup">Don't have an account? <a href="signup.html">Sign up</a></div>
+<div class="signup">Don't have an account? <a href="signup.html" target="_blank">Sign up</a></div>
 
 </body>
 </html>
