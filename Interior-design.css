@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.sidebar{
+    height: 100vh;
+    width: 20%;
+    background-color: rgb(2, 2, 74);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+}
+.main-content{
+    margin-left: 23%;
+    width: 75%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+.Company-name{
+    height: 30%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Menu{
+    height: 70%;
+    box-sizing: border-box;
+}
+.name{
+    width: 80%;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.Menu{
+    display: flex;
+    justify-content: center;
+}
+.Menu-list{
+    height: 60%;
+    width: 80%;
+    display: flex;
+}
+ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+    box-sizing: border-box;
+    
+}
+li{
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+li:hover{
+    color: black;
+    background-color: white;
+    height: 40px;
+   
+}
+h1{
+    margin-top: 10%;
+    font-size: 65px;
+    font-family: sans-serif;
+}
+h2{
+    font-size: 50px;
+    font-family: sans-serif;
+}
+.Showcase{
+    height: 160vh;
+    margin-top: 2%;
+}
+.image1{
+    height: 59vh;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.image2{
+    height: 39vh;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.inner{
+    height: 100%;
+    width: 49%;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.Services{
+    height: 50vh;
+    margin-top: 2%;
+    box-sizing: border-box;
+}
+p{
+    font-size: 17px;
+    font-family: sans-serif;
+    text-align: justify;
+}
+.Designer{
+    height: 130vh;
+
+}
+h3{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.inner-design{
+    display: flex;
+    justify-content: space-between;
+    height: 60%;
+    
+
+}
+.Design-image{
+    height: 100%;
+    width: 32%;
+    
+}
+.john{
+    height: 52%;
+    
+}
+.joe{
+    display: flex;
+    flex-direction: column;
+    height: 48%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgb(235, 232, 232);
+}    
+
+h4{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+span{
+    color: gray;
+    font-size: 18px;
+}
+.Packages{
+    height: 100vh;
+}
+.inner-package{
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.basic{
+    width: 49%;
+    background-color: rgb(235, 232, 232);
+}
+.basic1{
+    color: white;
+    background-color: rgb(99, 97, 97);
+    font-size: 30px;
+    font-family: sans-serif;
+    height: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.basic2{
+    height: 10%;
+    font-size: 17px;
+    font-family: sans-serif;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.basic3{
+    height: 20%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h6{
+    font-size: 30px;
+    font-family: sans-serif;
+}
+h5{
+    font-size: 17px;
+    color: gray;
+}
+.basic4{
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up{
+    height: 50%;
+    width: 30%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-up:hover{
+    background-color: black;
+    color: white;
+}
+#b1{
+    background-color: rgb(2, 2, 74);
+}
+#s1{
+    background-color: rgb(2, 2, 74);
+    color: white;
+}
+#s1:hover{
+    background-color: black;
+    color: white;
+}
+.Contact{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    
+}
+input{
+    height: 10%;
+}
+
+.form{
+
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    margin: 1rem;
+
+}
+
+.form label{
+
+    margin-left: 1rem;
+    position: relative;
+    top: 1rem;
+}
+.send{
+    background-color: rgb(2, 2, 74);
+    color: white;
+}
+.send:hover{
+    background-color: white;
+    color: black;
+}
+.owner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-shadow: 4px 4px 40px blue;
+}
