@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            height: 10rem;
+            width: 10rem;
+            background-color: aqua;
+            animation-name: Anil;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            position: relative;
+
+        }
+
+        @keyframes Anil {
+            /*from{
+                width: 1rem;
+                background-color: aqua;
+                left: 0;
+                top: 0;
+                
+            }
+            to{
+                display: flex;
+                width: 40rem;
+                background-color: aqua;
+                
+            }*/
+
+            0%{
+                left: 0;
+                top: 0;
+            }
+            20%{
+                left: 80%;
+                top: 0;
+                background-color: blue;
+            }
+            40%{
+                left: 0;
+                top: 70vh;
+                background-color: chartreuse;
+            }
+            60%{
+                left: 80%;
+                top: 70vh;
+                background-color: crimson;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box1" >
+        
+    </div>
+    
+</body>
+</html>

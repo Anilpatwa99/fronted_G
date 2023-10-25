@@ -1,0 +1,539 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 11vh;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 2px 2px 10px rgb(224, 221, 221);
+    
+}
+.navbar{
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    min-width: 800px;
+}
+.logo{
+    height: 80%;
+    width: 15%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+img{
+    height: 100%;
+    width: 100%;
+
+}
+.menu{
+    width: 50%;
+    overflow: hidden;
+}
+b{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: sans-serif;
+    align-items: center;
+    list-style: none;
+
+
+}
+.klassycafe{
+    margin-top: 11vh;
+    height: 90vh;
+    display: flex;
+    
+}
+.cafe{
+    width: 35%;
+    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/top-left-bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 65%;
+}
+li:hover{
+    color: #fb5849;
+    cursor: pointer;
+}
+.innercafe{
+    height: 30%;
+    width: 50%;
+    
+}
+h1{
+    font-size: 50px;
+    overflow: hidden;
+    font-family: sans-serif;
+    color: #fff;
+      
+}
+h2{
+    color: #fff;
+    text-align: justify;
+    font-family: sans-serif;
+}
+button{
+    height: 30%;
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.about-us{
+    margin-top: 7rem;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.inner-about{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.video{
+    width: 45%;
+    height: 80%;
+    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/about-video-bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.play{
+   
+    cursor: pointer;
+    color: #fb5849;
+    font-size: 50px;
+    
+}
+h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fb5849;
+    font-family: sans-serif;
+    padding: 5px;
+}
+h4{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 900;
+    padding-right: 120px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    line-height: 40px;
+}
+p{
+    color: #2a2a2a;
+    line-height: 25px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.aboutss{
+    margin-top: 5rem;
+    height: 11rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.innerss{
+    width: 30%;
+}
+.our-menu{
+    margin-top: 5rem;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    background-color: #f5e6e6;
+    overflow: hidden;
+}
+.inner-menu{
+    width: 75%;
+    height: 100%;
+}
+.card{
+    margin-top: 5rem;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.innercard{
+    height: 100%;
+    width: 22%;
+    overflow: hidden;
+
+    
+}
+#card1{
+    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/menu-item-02.jpg);
+}
+.price{
+    background-color: #fb5849;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.info{
+    height: 60%;
+    position: relative;
+    top: 12rem;
+    width: 100%;
+    background-color: #fb5849;
+    transition: all 1s ease-out;
+}
+.info:hover{
+    cursor: pointer;
+    position: relative;
+    top: 4rem;
+}
+h5{
+    margin: 0;
+    padding: 30px 30px 20px 30px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.description{
+    padding: 0px 30px;
+    color: #fff;
+}
+#card2{
+    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/menu-item-01.jpg);
+}
+#card3{
+    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/menu-item-03.jpg);
+}
+#card4{
+    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/menu-item-04.jpg);
+}
+.menuh3{
+    margin-top: 5rem;
+}
+.dropbtn {
+    background-color: white;
+    bottom: unset;
+    color:  black;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.arrow {
+    font-size: 12px;
+    margin-left: 5px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    font-weight: 100;
+    font-size: 14px;
+    color: #2a2a2a;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+
+    color: red;
+    margin-left: 5px;
+}
+
+.chef{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+.inner-chef{
+    height: 100%;
+    width: 75%;
+}
+.chef1{
+    text-align: center;
+    padding: 0;
+}
+#chef2{
+    margin-top: 6rem;
+}
+.chef-content{
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.7rem;
+}
+.chefs{
+    height: 100%;
+    border: 1px solid #afafaf;
+    width: 31%;
+    border-radius: 3px;
+}
+.chefs:hover{
+    border: 1px solid  #fb5849;
+}
+.chef-image{
+    height: 72%;
+    margin: 6px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    background-color: #2a2a2a;
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    
+}
+.chef-image:hover .overlay{
+    cursor: pointer;
+    opacity: 0.9;
+    visibility: visible;
+}
+.overlay-icons{
+    position: absolute;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+.chef-image:hover .overlay-icons{
+    visibility: visible;
+    opacity: 1;
+}
+
+.social-icon{
+    margin: 0px 5px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: white;
+    color: #2a2a2a;
+    border-radius: 50%;
+    transition: all 1s;
+}
+.social-icon:hover{
+    background-color: #fb5849;
+}
+i{
+    color: black;
+}
+.chef-name1{
+    color: #2a2a2a;
+    padding: 0%;
+}
+.chef-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+span{
+    margin-top: .5rem;
+    font-family: sans-serif;
+    line-height: 30px;
+}
+.chefs:hover .chef-name1{
+    color: #fb5849;
+}
+.contact{
+    height: 105vh;
+    background-image: url(https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/reservation-bg.jpg);
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-contact{
+    height: 80%;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-description{
+    height: 100%;
+    width: 50%;
+    color: #f9f9f9;
+    box-sizing: border-box;
+
+}
+.contact-form{
+    height: 100%;
+    width: 45%;
+    border-radius: 5px;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h3{
+    color: #f9f9f9;
+}
+.h4{
+    padding: 0;
+}
+.inner-description{
+    height: 28%;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.phone{
+    height: 100%;
+    width: 40%;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+
+}
+.phone-logo{
+    height: 70px;
+    width: 70px;
+    background-color: #fb5849;
+    border-radius: 50%;
+    font-size: 24px;
+    bottom: 35px;
+    color: #fff;
+    position: relative;
+    bottom: 35px;
+}
+#p1{
+    position: relative;
+    bottom: 10px;
+}
+.form{
+    height: 90%;
+    width: 90%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.f4{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.f1{
+    height: 2rem;
+    width: 40%;
+    margin: 0px 20px;
+    box-sizing: border-box;
+}
+input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 14px;
+}
+.f2{
+    height: 7rem;
+    width: 100%;
+    margin: 0px 20px;
+
+}
+.f3{
+    height: 3rem;
+    width: 100%;
+    margin: 0px 20px;
+  
+}
+.f31:hover{
+    cursor: pointer;
+    opacity: .9;
+}
+select{
+    height: 100%;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.offers{
+    height: 110vh;
+    border: 1px solid;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-offer{
+    height: 100%;
+    width: 75%;
+    border: 1px solid ;
+
+}
