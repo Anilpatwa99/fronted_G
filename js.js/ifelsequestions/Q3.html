@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+function vaildation(sideA, sideB, sideC) {
+  if (sideA + sideB > sideC && sideB+ sideC > sideA && sideA+sideC > sideB) {
+    return 1;
+  }
+   else {
+    return 0;
+  }
+
+}
+
+let sideA = Number(prompt('enter the length of side a'))
+let sideB = Number(prompt('enter the length of side b'))
+let sideC= Number(prompt('enter the length of side c'))
+
+let ans  = vaildation(sideA,sideB,sideC)
+
+if (ans==1){
+    console.log('it is a valid traingle ')
+}
+else{
+    console.log('it is not a valid triangle ')
+}
+
+    </script>
+</body>
+</html>

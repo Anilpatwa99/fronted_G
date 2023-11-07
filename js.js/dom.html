@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <button id="add">Add</button>
+
+    <h1  id="bg">Addition : <span id="ans"></span></h1>
+
+
+    <script>
+
+        let a = 10
+        let b = 20
+
+        let add=  ()=>{
+            document.getElementById('ans').innerHTML =` ${a} + ${b} = ${a+b}`
+            document.getElementById('bg'). style.backgroundColor = "red"
+
+        }
+        document.getElementById('add').onclick = add
+        
+    </script>
+</body>
+</html>
