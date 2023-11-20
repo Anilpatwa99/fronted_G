@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            height: 100vh;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           background-color: black;
+    
+        }
+        #timer {
+            font-size: 4em;
+            margin: 20px;
+            color: blueviolet;
+            
+        }
+        #buttons {
+            margin: 20px;
+        }
+        button{
+            text-align: center;
+            height: 50px;
+            width: 50px;
+            border-radius: 70%;
+            padding: 10px;
+            font-size: 20px;
+            background-color:rgb(96, 12, 175);
+            color:  white ;
+            
+            margin: 0.5rem;
+            border: none;
+        }
+        .stopwatch{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            
+            height: 25rem;
+            width: 25rem;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            box-shadow: 0px 0px 30px blueviolet;
+            background-color: white;
+        }
+        #pause{
+            display: none;
+        }
+      
+    </style>
+</head>
+<body>
+<div class="stopwatch">
+<div id="timer">00:00:00</div>
+<div id="buttons">
+    <button onclick="start()"><i class="fa-solid fa-play" id="play"></i><i class="fa-solid fa-pause" id="pause"></i></button>
+    <button onclick="stop()"><i class="fa-solid fa-stop"></i></button>
+    <button onclick="reset()"><i class="fa-solid fa-rotate-right"></i></button>
+</div>
+</div>
+
+<script>
+    let timer;
+    let microsecond=0, seconds = 0, minutes = 0;
+
+    function start() {
+
+        count = 0
+
+        if(count==0){
+
+            document.getElementById("pause").style.display = "block";
+            document.getElementById("play").style.display = "none"
+            
+        }
+       
+
+        timer = setInterval(updateTimer,  10.101010101010);
+    }
+
+    function stop() {
+         click = 0
+
+        if(click==0){
+
+            document.getElementById("pause").style.display = "none";
+            document.getElementById("play").style.display = "block"
+        }
+        clearInterval(timer);
+    }
+
+    function reset() {
+        clearInterval(timer);
+        microsecond = 0;
+        seconds = 0;
+        minutes = 0;
+        
+        updateDisplay();
+    }
+
+    function updateTimer() {
+        microsecond ++;
+        if(microsecond === 99){
+            microsecond = 0;
+            seconds++;
+         if (seconds === 60) {
+            seconds = 0;
+            minutes++;
+        }
+    }
+        updateDisplay();
+    }
+
+ 
+
+    function updateDisplay() {
+        const formattedTime =  pad(minutes) + ':' + pad(seconds) + ":" + pad(microsecond);
+        document.getElementById('timer').textContent = formattedTime;
+    }
+   
+
+
+    function pad(value) {
+
+        return value < 10 ? '0'+ value : value;
+    }
+</script>
+
+</body>
+</html>

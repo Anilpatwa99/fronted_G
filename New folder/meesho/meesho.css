@@ -1,0 +1,30 @@
+button{
+    background-color: rgb(122, 4, 4);
+}
+.bg-image{
+    background-image: url(https://images.meesho.com/images/marketing/1698036891727_1200.webp);
+
+   
+}
+.women-store{
+    position: relative;
+    top: 40px;
+    margin: 20px;
+}
+.mens-store{
+    position: relative;
+    top: 200px;
+}
+.bg-image1{
+    background-image: url(https://images.meesho.com/images/marketing/1698037513933_1200.webp);
+    height: 74vh;
+    width: 85%;
+}
+.home-decor{
+    position: relative;
+    top: 120px;
+    margin-right: 20px;
+}
+.decor{
+    margin-left: 25px;
+}

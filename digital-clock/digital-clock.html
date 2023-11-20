@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 50px;
+
+        }
+         .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #clock {
+            font-size: 3em;
+        }
+        .toggle-input{
+            display: none;
+        }
+        .toggle-label{
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 10px;
+            position: relative;
+            cursor: pointer;
+
+        }
+        .toggle-input:checked+ .toggle-label {
+           background-color: #072e08;
+        }
+        .toggle-label::before {
+            content: "";
+            width: 18px;
+            height: 18px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            transition: 0.2s;
+        }
+        .toggle-input:checked + .toggle-label::before{
+           left: calc(100% - 20px);
+        }
+    </style>
+</head>
+
+<body id="color">
+
+    <h1>Digital clock</h1>
+    
+    <div>
+        <h2>Dark Mode</h2>
+    <input type="checkbox" id="toggle" class="toggle-input">
+    <label for="toggle" class="toggle-label" id="bg"></label>
+</div>
+
+    <div class="main">
+    <div id="clock"></div>
+</div>
+
+    <script>
+        function updateClock() {
+   
+    const now = new Date();
+
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+
+  
+    const clockElement = document.getElementById('clock');
+    clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+}
+
+
+setInterval(updateClock, 1000);
+
+
+updateClock();
+
+
+let count=0
+document.getElementById('bg').onclick = function(){
+    console.log(count)
+    if(count == 0){
+        document.getElementById('color').style.backgroundColor= "black"
+        document.getElementById('color').style.color= "white"
+        count = count + 1
+    }
+    else{
+        document.getElementById('color').style.backgroundColor= "white"
+        document.getElementById('color').style.color= "black"
+        count --
+
+    }
+    
+
+}
+
+
+
+
+    </script>
+
+
+</body>
+</html>

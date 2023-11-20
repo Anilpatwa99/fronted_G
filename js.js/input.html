@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter A Number" id="text">
+    <br><br>
+    <button >Submit</button>
+
+    <script>
+                    document.querySelector("button").onclick = function(){
+
+
+                        let a = document.getElementById("text").value;
+                        
+                        for(let i=1; i<=a;i++){
+                           
+                           if(i==a/2){
+                            continue;
+                            
+                           }
+                           else{
+                            console.log(i);
+                           }
+                        }
+                        return 0
+
+                  
+                 
+                    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter your Name "  >
+    <input type="text" placeholder="Enter your father Name " >
+    <input type="text" placeholder="Enter your mother Name ">
+    <input type="datetime" placeholder=" DOB" >
+    <button class="btn">Submit</button>
+
+
+
+    <script>
+
+                
+                  document.querySelector(".btn").onclick = function(){
+
+                    let a = document.querySelectorAll('input');
+
+                    for(i=0; i<a.length ; i++){
+                        console.log(a[i].value)
+                    }
+                  
+                 
+
+                   
+                    
+                  }
+    </script>
+</body>
+</html>
