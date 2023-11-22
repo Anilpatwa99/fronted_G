@@ -1,0 +1,148 @@
+
+      .header{
+        z-index: 1000;
+        background-color: #fff;
+        box-shadow: 0 0 10px #8019c8;
+      }
+        
+        .nav-link{
+          color: black;
+          border-radius: 15px;
+
+        }
+        .nav-link:hover{
+          border-radius: 15px;
+         background-color: #8019c8;
+         color: #fff;
+         
+        }
+       
+        #logo{
+          color: #8019c8;
+        }
+        #menu-btn{
+          border: none;
+          font-size: 23px
+        }
+       
+        .nav-pills{
+          display: flex;
+          flex-wrap: nowrap;
+        }
+        #home{
+          background-color: #8019c8;
+          color: #fff;
+        }
+     
+       
+        
+        .slider-box img{
+          height: 100%;
+          width: 100%;
+        
+        }
+        .slider-box{
+        
+          overflow-x: hidden;         
+        
+
+        }
+        .img-box img{
+          text-align: center;
+          height: 65px;          
+        }
+       
+        .detail-box {
+          text-align: center;
+          box-sizing: border-box;
+        }
+        
+       h5{
+        margin-top: 15px;
+        font-size: 1.25rem;
+        font-weight: bold;
+       }
+       .service{
+        background-color: #f8f8f8;
+        padding-top: 4rem;
+       }
+       .layout_padding{
+        padding: 90px 0 90px 0;
+       }
+       .btn{
+        background-color: #8019c8;
+       }
+      
+      .btn:hover{
+        background-color: black;
+        color: #fff;
+      }
+      li{
+        margin-right: 10px;
+      }
+      .about-main img{
+       
+       width: 100%;
+      
+      }
+     .about-image1{
+       width: 100%;
+       box-sizing: border-box;
+       }
+   .about-image2{
+    width: 100%;
+    margin-top: 50px;
+    box-sizing: border-box;
+   }
+   .about{
+    background-color: #f8f8f8;
+    height: 5rem;
+   }
+   .product-label{
+    height: 3rem;
+    width: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 230, 36);
+    color: #fff;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+   }
+   .card{
+    width: 355px;
+   }
+   .card-image{
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+   }
+   .Add-to-cart{
+    text-align: center;
+    border: none;
+    background-color: #8019c8;
+    color: #fff;
+    height: 3rem;
+    width: 8rem;
+    font-size: 18px;
+    border-radius: 10px;
+   }
+   .card{
+    margin: 40px;
+    border: none;
+    box-shadow: 0 0 2px white;
+   }
+   .card-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -10px;
+   }
+  @media (max-width: 320px)   {
+    .card-image img{
+      height: 10rem;
+    }
+  }
+  

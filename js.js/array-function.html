@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+      
+    </style>
+</head>
+<body>
+
+<input type="text" placeholder="Enter your name" id="inp1">
+
+<button id="btn1">submit</button>
+<br><br>
+<input type="number" placeholder="Enter your marks" id="inp2">
+
+
+<button id="btn2">submit</button>
+<br><br>
+<button id="btn3">Print</button>
+
+    <script>
+        //pop
+       //push
+       //shift
+       // unshift
+       // map
+       //filter
+       // slice 
+       //reduce
+       // splice
+
+       let a =[]
+       document.getElementById('btn1').onclick= function(){
+        let c = document.getElementById('inp1').value
+        document.getElementById('inp1').value =""
+        document.getElementById('inp1').focus();
+        a.push(c)
+        
+        
+       }
+       let b =[]
+       document.getElementById('btn2').onclick= function(){
+        let d = document.getElementById('inp2').value
+        document.getElementById('inp2').value =""
+        document.getElementById('inp2').focus();
+        b.push(d)
+       }
+       document.getElementById("btn3").onclick= function(){
+        console.log(a)
+        let e = b.map(function(item){
+            if(item>=50){
+                return "Pass"
+            }
+            else{
+                return "Fail"
+            }
+        })
+        console.log(e)
+       }
+    </script>
+    
+</body>
+</html>
