@@ -1,4 +1,5 @@
 {
     "editor.fontFamily": "Consolas, 'Courier New', monospace \"editor.fontFamily\": \"DancingFont, cursive, 'Comic Sans MS', sans-serif\"",
-    "terminal.integrated.fontFamily": "monospace"
+    "terminal.integrated.fontFamily": "monospace",
+    "liveServer.settings.host": "127.0.0.1"
 }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="id" id="id">
+    <input type="text" placeholder="name" id="name">
+    <input type="text" placeholder="age" id="age">
+    <input type="text" placeholder="city" id="city">
+
+    <button id="btn">submit</button>
+
+    <script>
+        let student=[]
+      
+        document.getElementById("btn").onclick = ()=>{
+
+            
+                    let a = Number(document.getElementById("id").value)
+                    let b= document.getElementById("name").value
+                    let c=Number(document.getElementById("age").value)
+                    let d=document.getElementById("city").value
+
+                    
+
+                           let e={
+                               
+                               id:a,
+                               name:b,
+                               age:c,
+                             }
+                    student.push(e)
+
+
+                    console.log(student)
+                            
+     }
+    </script>
+</body>
+</html>

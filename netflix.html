@@ -7,34 +7,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <style>
-        ul{
-            height: 200px;
-            width: 200px;
+      .img1{
+        height: 100%;
+        width: 100%;
+        display: none;
+      }
+      .img2{
+        height: 100%;
+        width: 100%;
+      }
+      .b1:hover{
+        .img1{
+            display: block;
+        }
+      }
 
-        }
-        .b1{
-            height: 40px;
-            width: 40px;
-            border-radius: 50%;
-            background-color: blueviolet;
-            color: wheat;
-            text-align: center;
-            line-height: 40px;
-        }
-        i{
-            color: white;
-            
-        }
-       
 
+      @media (min-width: 576px)
+.card-group {
+    display: flex;
+    flex-flow: row wrap;
+}
     </style>
 </head>
 <body>
 
-        <ul>
-            <div class="b1"><i  class="fab fa-instagram"></i></div>
-            <div class="b1"></div>
-            <div class="b1"></div>
-        </ul>
+        
+            
+            <div class="b1">
+                <img class="img1" src="https://tse1.mm.bing.net/th?id=OIP.1YM53mG10H_U25iPjop83QHaEo&pid=Api&P=0&h=180" alt="">
+                <img  class="img2" src="http://thewowstyle.com/wp-content/uploads/2015/01/nature-wallpaper-27.jpg" alt="">
+            </div>
+        
 </body>
 </html>

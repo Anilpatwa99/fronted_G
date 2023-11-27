@@ -6,20 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" placeholder="Enter Your Name">
-    <button>submit</button>
-
+   
     <script>
 
-        let a = []
-        document.querySelector('button').onclick = function(){
+        let a = [10,20,[50,60,"mohit"],10,20]
 
-            let b = document.querySelector("input").value
-            document.querySelector('input').value =""
-            document.querySelector('input').focus();
-            a.push(b)
-            console.log(a)
-        }
+        console.log(a.join("2"))
+       
         
 
        

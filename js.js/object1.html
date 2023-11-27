@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let student=[
+            {
+                id:15,
+                name:"anil",
+                age:22,
+                city:"jaipur"
+            },
+            {
+                id:55,
+                name:"sunil",
+                age:18,
+                city:"jaipur"
+            },
+            {
+                id:20,
+                name:"aman",
+                age:15,
+                city:"jaipur"
+            },
+            {
+                id:25,
+                name:"mohit", 
+                age:25,
+                city:"jaipur"
+            }
+        ]
+
+       let filter_data = student.filter((item)=>{
+        return item.age>18
+       })
+        console.log(filter_data)
+    </script>
+</body>
+</html>
