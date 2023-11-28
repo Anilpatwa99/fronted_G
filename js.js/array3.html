@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter your friends's name">
+    <button id="btn">add to array</button>
+    <button id="btn2">print name</button>
+    <h1></h1>
+
+    <script>
+            let a =[]
+            document.getElementById("btn").onclick = function(){
+
+            
+            let b = document.querySelector("input").value;
+             document.querySelector("input").value =""
+             document.querySelector("input").focus()
+            
+             a.push(b)
+             
+            console.log(a)
+
+            }
+            document.getElementById("btn2").onclick = ()=>{
+
+             
+                let c = document.createElement("h1")
+                c.innerHTML = a
+                document.body.appendChild(c[1])
+                   
+                // setInterval(function(){
+                    
+                //   document.body.appendChild(c[i])
+                //     i++
+                     
+                // }, 1000)
+
+                
+            }
+
+    </script>
+</body>
+</html>

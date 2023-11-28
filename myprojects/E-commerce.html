@@ -25,8 +25,16 @@
           <li class="nav-item">
             <a class="nav-link nav-home fs-5 text-light"  aria-current="page" href="#home" >Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link  fs-5" href="#product">Products</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle  fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Product
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#product">Top Sale Watches</a></li>
+              <li><a class="dropdown-item" href="#feature">Feature Watches</a></li>
+              
+              <li><a class="dropdown-item" href="#new_arrival">New Arrivals</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link  fs-5" href="#about">About</a>
@@ -37,17 +45,7 @@
           <li class="nav-item">
             <a class="nav-link  fs-5" href="#"><i class="fas fa-shopping-cart"></i></a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle  fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
+          
           
         </ul>
         <form class="d-flex" role="search">
@@ -234,7 +232,7 @@
 
 
 
-    <section class="service pt-0 pb-5 mt-5  ">
+    <section class="service pt-0 pb-5 mt-5  " id="feature">
       
       <div class="container">
         <div class="product-label">Feature Watches</div>
@@ -289,7 +287,7 @@
     </section>
 
 
-    <section class="service pt-0 pb-5 mt-5">
+    <section class="service pt-0 pb-5 mt-5" id="new_arrival">
       
       <div class="container">
         <div > <span class="product-label">New Arrivals </span></div>
