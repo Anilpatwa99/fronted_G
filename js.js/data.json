@@ -1,0 +1,19 @@
+[{
+    "id": 2,
+    "name":"sunil",
+    "city": "jaipur"
+    
+},
+{
+    "id": 1,
+    "name":"anil",
+    "city": "jodhpur"
+    
+},
+{
+    "id": 5,
+    "name":"ama",
+    "city": "kota"
+    
+}
+]

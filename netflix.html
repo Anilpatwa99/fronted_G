@@ -7,37 +7,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <style>
-      .img1{
-        height: 100%;
-        width: 100%;
-        display: none;
+
+      body{
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
-      .img2{
-        height: 100%;
-        width: 100%;
-      }
-      .b1:hover{
-        .img1{
-            display: block;
-        }
+      img{
+        height: 500px;
+        width: 600px;
       }
 
-
-      @media (min-width: 576px)
-.card-group {
-    display: flex;
-    flex-flow: row wrap;
-}
+     .slide{
+      display: none;
+     }
+      #btn1{
+        position: relative;
+        right: 200px;
+      }
+      #btn2{
+        position: relative;
+        left: 200px;
+      }
     </style>
 </head>
 <body>
 
+  
+    <button id="btn1">Previous</button>
+ 
         
-            
-            <div class="b1">
-                <img class="img1" src="https://tse1.mm.bing.net/th?id=OIP.1YM53mG10H_U25iPjop83QHaEo&pid=Api&P=0&h=180" alt="">
-                <img  class="img2" src="http://thewowstyle.com/wp-content/uploads/2015/01/nature-wallpaper-27.jpg" alt="">
-            </div>
+<div class="container">
+        <div class="slide">
+          <img src="https://wonderfulengineering.com/wp-content/uploads/2014/10/image-wallpaper-15-1024x768.jpg" alt="">
+        </div  >
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1533450718592-29d45635f0a9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9" alt="">
+        </div  >
+        <div  class="slide">
+          <img src="https://cdn.thinglink.me/api/image/846928315322204160/1024/10/scaletowidth/0/0/1/1/false/true?wait=true" alt="">
+        </div  >
+      </div>
+
+      <button id="btn2">Next</button>
         
+
+      <script>
+        
+        document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll(".slide");
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.display = (i === index) ? "block" : "none";
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    // Initial setup
+    showSlide(currentSlide);
+
+    // Event listeners for next and previous buttons (you can customize these)
+    document.getElementById("btn2").addEventListener("click", nextSlide);
+    document.getElementById("btn1").addEventListener("click", prevSlide);
+
+    setInterval(nextSlide ,2000)
+});
+
+      </script>
 </body>
 </html>
