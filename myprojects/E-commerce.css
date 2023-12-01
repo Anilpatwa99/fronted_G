@@ -86,7 +86,7 @@ h5 {
 }
 
 .btn:hover {
-  background-color: black;
+  background-color: #0f1521;
   color: #fff;
 }
 
@@ -138,6 +138,8 @@ li {
   margin-top: 3rem;
   text-align: center;
   width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
 
 .Add-to-cart {
@@ -153,8 +155,10 @@ li {
 
 .card {
   min-width: 300px;
+  max-width: 350px;
   margin: 40px;
   border: none;
+ 
   box-shadow: 0 0 2px white;
 }
 
@@ -171,13 +175,17 @@ li {
   }
 }
 
+@media (min-width:576px){
+  .card{
+    margin-left: 0;
+  }
+}
 @media (min-width:321px) and (max-width:900px){
     
  .card-group{
-  display: flex;
-  
-
- }
+    display: flex;
+    flex-flow: row wrap;
+   }
        
    }
 

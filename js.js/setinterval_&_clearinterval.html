@@ -27,17 +27,23 @@
             }
             document.getElementById("btn2").onclick = ()=>{
 
-             
-                let c = document.createElement("h1")
-                c.innerHTML = a
-                document.body.appendChild(c[1])
-                   
-                // setInterval(function(){
+                  let i=0 
+               var e =setInterval(print , 2000)
+
+               function print(){
+                    if(i>=a.length){
+                        clearInterval(e)
+                    }
+                    else{
+                        let c = document.createElement("h1")
+                        c.innerHTML = a[i]
+                        document.body.appendChild(c)
+                        i++
+                    }
                     
-                //   document.body.appendChild(c[i])
-                //     i++
                      
-                // }, 1000)
+                }
+           
 
                 
             }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h4{
+            text-align: center;
+        }
+        body{
+            display: flex;
+            flex-wrap: wrap;
+            gap:  20px;
+        }
+        img{
+            width: 100%;
+            aspect-ratio: 3/2;
+            object-fit: contain;
+            mix-blend-mode: color-burn;
+        }
+        .anil p{
+            text-align: center;
+            font-size: 10px;
+        }
+        .anil{
+            padding: 10px;
+            width: 230px;
+            border: 1px solid gray;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        fetch("https://dummyjson.com/products").then((item)=>{
+
+            // console.log(item.json( ))
+            return  item.json( )
+        }) .then((a)=>{
+            for(let i of a.products){
+
+                let div = document.createElement("div");
+                div.setAttribute("class","anil");
+
+                let  title= document.createElement("h4");
+                title.innerHTML = i.title
+
+                let description = document.createElement("p");
+                description.innerHTML= i.description
+
+                let image=document.createElement("img");
+                image.src= i.images[0]
+
+                div.append(image)
+                div.append(title)
+                div.append(description)
+
+                console.log(div)
+                document.body.append(div)
+               
+            }
+            })
+
+          
+    </script>
+</body>
+</html>
