@@ -240,16 +240,16 @@ p{
 }
 .card{
     margin-top: 5rem;
-    height: 50%;
-    width: 100%;
+ 
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
 }
 .innercard{
-    height: 100%;
-    width: 22%;
+    height: 20rem;
+    width: 15rem;
 
     
 }
